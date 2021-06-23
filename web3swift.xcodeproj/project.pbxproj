@@ -193,6 +193,7 @@
 		E2EDC5EC241EE18700410EA6 /* wk.bridge.min.js in Resources */ = {isa = PBXBuildFile; fileRef = E2EDC5EB241EE18700410EA6 /* wk.bridge.min.js */; };
 		E2EDC5EE241EE1E600410EA6 /* Bridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EDC5ED241EE1E600410EA6 /* Bridge.swift */; };
 		E9B1169826832C4C00A9E41F /* PBKDF2+Calculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B1169726832C4C00A9E41F /* PBKDF2+Calculate.swift */; };
+		E9B1169A268341FC00A9E41F /* Scrypt+Calculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B11699268341FC00A9E41F /* Scrypt+Calculate.swift */; };
 		F587AF3526776E1000C73E7E /* Starscream.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F587AF3026776E0F00C73E7E /* Starscream.xcframework */; };
 		F587AF3626776E1000C73E7E /* Starscream.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F587AF3026776E0F00C73E7E /* Starscream.xcframework */; };
 		F587AF3726776E1000C73E7E /* BigInt.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F587AF3126776E0F00C73E7E /* BigInt.xcframework */; };
@@ -408,6 +409,7 @@
 		E2EDC5EB241EE18700410EA6 /* wk.bridge.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = wk.bridge.min.js; sourceTree = "<group>"; };
 		E2EDC5ED241EE1E600410EA6 /* Bridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bridge.swift; sourceTree = "<group>"; };
 		E9B1169726832C4C00A9E41F /* PBKDF2+Calculate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PBKDF2+Calculate.swift"; sourceTree = "<group>"; };
+		E9B11699268341FC00A9E41F /* Scrypt+Calculate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Scrypt+Calculate.swift"; sourceTree = "<group>"; };
 		F587AF3026776E0F00C73E7E /* Starscream.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Starscream.xcframework; path = Carthage/Build/Starscream.xcframework; sourceTree = "<group>"; };
 		F587AF3126776E0F00C73E7E /* BigInt.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = BigInt.xcframework; path = Carthage/Build/BigInt.xcframework; sourceTree = "<group>"; };
 		F587AF3226776E0F00C73E7E /* CryptoSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CryptoSwift.xcframework; path = Carthage/Build/CryptoSwift.xcframework; sourceTree = "<group>"; };
@@ -997,6 +999,7 @@
 			isa = PBXGroup;
 			children = (
 				E9B1169726832C4C00A9E41F /* PBKDF2+Calculate.swift */,
+				E9B11699268341FC00A9E41F /* Scrypt+Calculate.swift */,
 			);
 			path = Calculations;
 			sourceTree = "<group>";
@@ -1328,6 +1331,7 @@
 				3AA8160B2276E44100F5DB52 /* Web3+ERC165.swift in Sources */,
 				3AA815F22276E44100F5DB52 /* Promise+Batching.swift in Sources */,
 				3AA815E62276E44100F5DB52 /* Base58.swift in Sources */,
+				E9B1169A268341FC00A9E41F /* Scrypt+Calculate.swift in Sources */,
 				3AA816002276E44100F5DB52 /* Web3+ERC888.swift in Sources */,
 				3AA8151F2276E42F00F5DB52 /* EthereumContract.swift in Sources */,
 				3AA815DE2276E44100F5DB52 /* RIPEMD160+StackOveflow.swift in Sources */,
