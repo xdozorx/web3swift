@@ -192,6 +192,7 @@
 		E2EDC5EA241EDE3600410EA6 /* BrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EDC5E9241EDE3600410EA6 /* BrowserViewController.swift */; };
 		E2EDC5EC241EE18700410EA6 /* wk.bridge.min.js in Resources */ = {isa = PBXBuildFile; fileRef = E2EDC5EB241EE18700410EA6 /* wk.bridge.min.js */; };
 		E2EDC5EE241EE1E600410EA6 /* Bridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EDC5ED241EE1E600410EA6 /* Bridge.swift */; };
+		E9B1169826832C4C00A9E41F /* PBKDF2+Calculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B1169726832C4C00A9E41F /* PBKDF2+Calculate.swift */; };
 		F587AF3526776E1000C73E7E /* Starscream.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F587AF3026776E0F00C73E7E /* Starscream.xcframework */; };
 		F587AF3626776E1000C73E7E /* Starscream.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F587AF3026776E0F00C73E7E /* Starscream.xcframework */; };
 		F587AF3726776E1000C73E7E /* BigInt.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F587AF3126776E0F00C73E7E /* BigInt.xcframework */; };
@@ -406,6 +407,7 @@
 		E2EDC5E9241EDE3600410EA6 /* BrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserViewController.swift; sourceTree = "<group>"; };
 		E2EDC5EB241EE18700410EA6 /* wk.bridge.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = wk.bridge.min.js; sourceTree = "<group>"; };
 		E2EDC5ED241EE1E600410EA6 /* Bridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bridge.swift; sourceTree = "<group>"; };
+		E9B1169726832C4C00A9E41F /* PBKDF2+Calculate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PBKDF2+Calculate.swift"; sourceTree = "<group>"; };
 		F587AF3026776E0F00C73E7E /* Starscream.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Starscream.xcframework; path = Carthage/Build/Starscream.xcframework; sourceTree = "<group>"; };
 		F587AF3126776E0F00C73E7E /* BigInt.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = BigInt.xcframework; path = Carthage/Build/BigInt.xcframework; sourceTree = "<group>"; };
 		F587AF3226776E0F00C73E7E /* CryptoSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CryptoSwift.xcframework; path = Carthage/Build/CryptoSwift.xcframework; sourceTree = "<group>"; };
@@ -631,6 +633,7 @@
 		3AA815212276E44100F5DB52 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				E9B1169626832C4C00A9E41F /* Calculations */,
 				3AA815222276E44100F5DB52 /* ENS */,
 				3AA8152B2276E44100F5DB52 /* Hooks */,
 				3AA8152D2276E44100F5DB52 /* EIP */,
@@ -990,6 +993,14 @@
 			path = Browser;
 			sourceTree = "<group>";
 		};
+		E9B1169626832C4C00A9E41F /* Calculations */ = {
+			isa = PBXGroup;
+			children = (
+				E9B1169726832C4C00A9E41F /* PBKDF2+Calculate.swift */,
+			);
+			path = Calculations;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -1279,6 +1290,7 @@
 				3AA815DB2276E44100F5DB52 /* Web3+TxPool.swift in Sources */,
 				3AA8160A2276E44100F5DB52 /* Web3+ERC1594.swift in Sources */,
 				3AA815FB2276E44100F5DB52 /* Promise+Web3+Personal+UnlockAccount.swift in Sources */,
+				E9B1169826832C4C00A9E41F /* PBKDF2+Calculate.swift in Sources */,
 				3AA815AD2276E44100F5DB52 /* ENSRegistry.swift in Sources */,
 				3AA815CD2276E44100F5DB52 /* Web3+Personal.swift in Sources */,
 				3AA8151E2276E42F00F5DB52 /* EthereumFilterEncodingExtensions.swift in Sources */,
