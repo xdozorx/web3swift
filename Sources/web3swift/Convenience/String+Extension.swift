@@ -78,7 +78,7 @@ extension String {
         return self
     }
     
-    func addHexPrefix() -> String {
+    public func addHexPrefix() -> String {
         if !self.hasPrefix("0x") {
             return "0x" + self
         }
