@@ -181,12 +181,12 @@ extension ABIEncoder {
     
     public static func encodeSingleType(type: ABI.Element.ParameterType, value: AnyObject) -> Data? {
         switch type {
-        case .uint(let bits):
+        case .uint(_):
             if let biguint = convertToBigUInt(value) {
-                return biguint.abiEncode(bits: bits)
+                return biguint.abiEncode(bits: 256)
             }
             if let bigint = convertToBigInt(value) {
-                return bigint.abiEncode(bits: bits)
+                return bigint.abiEncode(bits: 256)
             }
         case .int(_):
             if let biguint = convertToBigUInt(value) {
