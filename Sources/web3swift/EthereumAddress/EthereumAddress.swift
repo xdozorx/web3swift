@@ -46,6 +46,11 @@ public struct EthereumAddress: Equatable {
             }
         }
     }
+    
+    public var normalAddress: String {
+        return _address.addHexPrefix().lowercased()
+    }
+    
     public var address:String {
         switch self.type {
         case .normal:
