@@ -192,6 +192,7 @@
 		E2EDC5EA241EDE3600410EA6 /* BrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EDC5E9241EDE3600410EA6 /* BrowserViewController.swift */; };
 		E2EDC5EC241EE18700410EA6 /* wk.bridge.min.js in Resources */ = {isa = PBXBuildFile; fileRef = E2EDC5EB241EE18700410EA6 /* wk.bridge.min.js */; };
 		E2EDC5EE241EE1E600410EA6 /* Bridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EDC5ED241EE1E600410EA6 /* Bridge.swift */; };
+		E9197FBF2A258ADB007051E1 /* EIP712.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9197FBE2A258ADB007051E1 /* EIP712.swift */; };
 		E97551C02683706A002794AF /* Scrypt+Calculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97551BE2683706A002794AF /* Scrypt+Calculate.swift */; };
 		E97551C12683706A002794AF /* PBKDF2+Calculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97551BF2683706A002794AF /* PBKDF2+Calculate.swift */; };
 		E9A21DC92683FC860062462C /* crypto_scrypt-hash.c in Sources */ = {isa = PBXBuildFile; fileRef = E9A21DB42683FC860062462C /* crypto_scrypt-hash.c */; };
@@ -430,6 +431,7 @@
 		E2EDC5E9241EDE3600410EA6 /* BrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserViewController.swift; sourceTree = "<group>"; };
 		E2EDC5EB241EE18700410EA6 /* wk.bridge.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = wk.bridge.min.js; sourceTree = "<group>"; };
 		E2EDC5ED241EE1E600410EA6 /* Bridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bridge.swift; sourceTree = "<group>"; };
+		E9197FBE2A258ADB007051E1 /* EIP712.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EIP712.swift; sourceTree = "<group>"; };
 		E97551BE2683706A002794AF /* Scrypt+Calculate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Scrypt+Calculate.swift"; sourceTree = "<group>"; };
 		E97551BF2683706A002794AF /* PBKDF2+Calculate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PBKDF2+Calculate.swift"; sourceTree = "<group>"; };
 		E9A21DB42683FC860062462C /* crypto_scrypt-hash.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "crypto_scrypt-hash.c"; sourceTree = "<group>"; };
@@ -717,6 +719,7 @@
 			children = (
 				3AA8152E2276E44100F5DB52 /* EIP67Code.swift */,
 				3AA8152F2276E44100F5DB52 /* EIP681.swift */,
+				E9197FBE2A258ADB007051E1 /* EIP712.swift */,
 			);
 			path = EIP;
 			sourceTree = "<group>";
@@ -1434,6 +1437,7 @@
 				3AA815F52276E44100F5DB52 /* Promise+Web3+Eth+GetBlockByNumber.swift in Sources */,
 				3AA8160E2276E44100F5DB52 /* Web3+ERC1155.swift in Sources */,
 				3AA815F42276E44100F5DB52 /* Promise+Web3+Eth+EstimateGas.swift in Sources */,
+				E9197FBF2A258ADB007051E1 /* EIP712.swift in Sources */,
 				3AA815C52276E44100F5DB52 /* ABIParameterTypes.swift in Sources */,
 				3AA815C22276E44100F5DB52 /* ABIDecoding.swift in Sources */,
 				3AA815EC2276E44100F5DB52 /* Promise+Web3+Eth+GetGasPrice.swift in Sources */,
