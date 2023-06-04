@@ -576,7 +576,6 @@
 		1317BCFD218C526300D6D095 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				E9BFC9C82A2CE0F300CBA01E /* EIP712 */,
 				E9A21DB12683FC860062462C /* libscrypt */,
 				3AA815152276E3FF00F5DB52 /* web3swift */,
 				13C3385821B6C26900F33F5E /* secp256k1 */,
@@ -668,6 +667,7 @@
 		3AA815152276E3FF00F5DB52 /* web3swift */ = {
 			isa = PBXGroup;
 			children = (
+				E9BFC9C82A2CE0F300CBA01E /* EIP712 */,
 				E2B7670E241ED424007EBFE3 /* Browser */,
 				3AA815162276E42F00F5DB52 /* Contract */,
 				3AA815622276E44100F5DB52 /* Convenience */,
