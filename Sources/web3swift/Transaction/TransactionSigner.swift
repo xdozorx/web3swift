@@ -32,6 +32,13 @@ public struct Web3Signer {
         return compressedSignature
     }
     
+    public static func signEIP712TypedData<T:AbstractKeystore>(_ hash: Data, keystore: T, account: EthereumAddress, password: String) throws -> Data? {
+        var privateKey = try keystore.UNSAFE_getPrivateKeyData(password: password, account: account)
+        defer {Data.zero(&privateKey)}
+        let (compressedSignature, _) = SECP256K1.signForRecovery(hash: hash, privateKey: privateKey, useExtraEntropy: false)
+        return compressedSignature
+    }
+    
     public struct EIP155Signer {
         public static func sign(transaction:inout EthereumTransaction, privateKey: Data, useExtraEntropy: Bool = false) throws {
             for _ in 0..<1024 {
