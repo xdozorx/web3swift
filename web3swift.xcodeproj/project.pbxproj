@@ -216,6 +216,15 @@
 		E9A21DDC2683FC860062462C /* crypto_scrypt-nosse.c in Sources */ = {isa = PBXBuildFile; fileRef = E9A21DC72683FC860062462C /* crypto_scrypt-nosse.c */; };
 		E9A21DDD2683FC860062462C /* crypto_scrypt-hexconvert.h in Headers */ = {isa = PBXBuildFile; fileRef = E9A21DC82683FC860062462C /* crypto_scrypt-hexconvert.h */; };
 		E9A21DDF2683FC9F0062462C /* libscrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = E9A21DDE2683FC9F0062462C /* libscrypt.h */; };
+		E9BFC9D22A2CE0F300CBA01E /* EIP712+TypedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BFC9C92A2CE0F300CBA01E /* EIP712+TypedData.swift */; };
+		E9BFC9D32A2CE0F300CBA01E /* EIP712+ABIDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BFC9CA2A2CE0F300CBA01E /* EIP712+ABIDecoder.swift */; };
+		E9BFC9D42A2CE0F300CBA01E /* EIP712+ABIValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BFC9CB2A2CE0F300CBA01E /* EIP712+ABIValue.swift */; };
+		E9BFC9D52A2CE0F300CBA01E /* EIP712+ABIType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BFC9CC2A2CE0F300CBA01E /* EIP712+ABIType.swift */; };
+		E9BFC9D62A2CE0F300CBA01E /* EIP712+ABIEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BFC9CD2A2CE0F300CBA01E /* EIP712+ABIEncoder.swift */; };
+		E9BFC9D72A2CE0F300CBA01E /* EIP712+BigInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BFC9CE2A2CE0F300CBA01E /* EIP712+BigInt.swift */; };
+		E9BFC9D82A2CE0F300CBA01E /* EIP712+ABIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BFC9CF2A2CE0F300CBA01E /* EIP712+ABIError.swift */; };
+		E9BFC9D92A2CE0F300CBA01E /* EIP712+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BFC9D02A2CE0F300CBA01E /* EIP712+JSON.swift */; };
+		E9BFC9DA2A2CE0F300CBA01E /* EIP712+Function.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BFC9D12A2CE0F300CBA01E /* EIP712+Function.swift */; };
 		F5213FF42673849600EBDC50 /* CryptoSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5213FEF2673849600EBDC50 /* CryptoSwift.xcframework */; };
 		F5213FF52673849600EBDC50 /* CryptoSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5213FEF2673849600EBDC50 /* CryptoSwift.xcframework */; };
 		F5213FF62673849600EBDC50 /* BigInt.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5213FF02673849600EBDC50 /* BigInt.xcframework */; };
@@ -455,6 +464,15 @@
 		E9A21DC82683FC860062462C /* crypto_scrypt-hexconvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "crypto_scrypt-hexconvert.h"; sourceTree = "<group>"; };
 		E9A21DDE2683FC9F0062462C /* libscrypt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libscrypt.h; sourceTree = "<group>"; };
 		E9A21DE02683FCF40062462C /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		E9BFC9C92A2CE0F300CBA01E /* EIP712+TypedData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EIP712+TypedData.swift"; sourceTree = "<group>"; };
+		E9BFC9CA2A2CE0F300CBA01E /* EIP712+ABIDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EIP712+ABIDecoder.swift"; sourceTree = "<group>"; };
+		E9BFC9CB2A2CE0F300CBA01E /* EIP712+ABIValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EIP712+ABIValue.swift"; sourceTree = "<group>"; };
+		E9BFC9CC2A2CE0F300CBA01E /* EIP712+ABIType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EIP712+ABIType.swift"; sourceTree = "<group>"; };
+		E9BFC9CD2A2CE0F300CBA01E /* EIP712+ABIEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EIP712+ABIEncoder.swift"; sourceTree = "<group>"; };
+		E9BFC9CE2A2CE0F300CBA01E /* EIP712+BigInt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EIP712+BigInt.swift"; sourceTree = "<group>"; };
+		E9BFC9CF2A2CE0F300CBA01E /* EIP712+ABIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EIP712+ABIError.swift"; sourceTree = "<group>"; };
+		E9BFC9D02A2CE0F300CBA01E /* EIP712+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EIP712+JSON.swift"; sourceTree = "<group>"; };
+		E9BFC9D12A2CE0F300CBA01E /* EIP712+Function.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EIP712+Function.swift"; sourceTree = "<group>"; };
 		F5213FEF2673849600EBDC50 /* CryptoSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CryptoSwift.xcframework; path = Carthage/Build/CryptoSwift.xcframework; sourceTree = "<group>"; };
 		F5213FF02673849600EBDC50 /* BigInt.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = BigInt.xcframework; path = Carthage/Build/BigInt.xcframework; sourceTree = "<group>"; };
 		F5213FF12673849600EBDC50 /* PromiseKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PromiseKit.xcframework; path = Carthage/Build/PromiseKit.xcframework; sourceTree = "<group>"; };
@@ -558,6 +576,7 @@
 		1317BCFD218C526300D6D095 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				E9BFC9C82A2CE0F300CBA01E /* EIP712 */,
 				E9A21DB12683FC860062462C /* libscrypt */,
 				3AA815152276E3FF00F5DB52 /* web3swift */,
 				13C3385821B6C26900F33F5E /* secp256k1 */,
@@ -1096,6 +1115,22 @@
 			path = libscrypt;
 			sourceTree = "<group>";
 		};
+		E9BFC9C82A2CE0F300CBA01E /* EIP712 */ = {
+			isa = PBXGroup;
+			children = (
+				E9BFC9C92A2CE0F300CBA01E /* EIP712+TypedData.swift */,
+				E9BFC9CA2A2CE0F300CBA01E /* EIP712+ABIDecoder.swift */,
+				E9BFC9CB2A2CE0F300CBA01E /* EIP712+ABIValue.swift */,
+				E9BFC9CC2A2CE0F300CBA01E /* EIP712+ABIType.swift */,
+				E9BFC9CD2A2CE0F300CBA01E /* EIP712+ABIEncoder.swift */,
+				E9BFC9CE2A2CE0F300CBA01E /* EIP712+BigInt.swift */,
+				E9BFC9CF2A2CE0F300CBA01E /* EIP712+ABIError.swift */,
+				E9BFC9D02A2CE0F300CBA01E /* EIP712+JSON.swift */,
+				E9BFC9D12A2CE0F300CBA01E /* EIP712+Function.swift */,
+			);
+			path = EIP712;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -1348,6 +1383,7 @@
 				3AA815C62276E44100F5DB52 /* ABI.swift in Sources */,
 				3AA815D02276E44100F5DB52 /* Web3+Utils.swift in Sources */,
 				E97551C02683706A002794AF /* Scrypt+Calculate.swift in Sources */,
+				E9BFC9D62A2CE0F300CBA01E /* EIP712+ABIEncoder.swift in Sources */,
 				3AA815B82276E44100F5DB52 /* EthereumKeystoreV3.swift in Sources */,
 				3AA815EB2276E44100F5DB52 /* Promise+Web3+Personal+Sign.swift in Sources */,
 				3AA815E32276E44100F5DB52 /* Dictionary+Extension.swift in Sources */,
@@ -1359,11 +1395,13 @@
 				3AA815FA2276E44100F5DB52 /* Promise+Web3+Eth+GetAccounts.swift in Sources */,
 				3AA815E72276E44100F5DB52 /* Array+Extension.swift in Sources */,
 				3AEF4ABF22C0B6BE00AC7929 /* Web3+Constants.swift in Sources */,
+				E9BFC9D22A2CE0F300CBA01E /* EIP712+TypedData.swift in Sources */,
 				3AA815DD2276E44100F5DB52 /* Web3+Options.swift in Sources */,
 				3AA815A92276E44100F5DB52 /* ENSReverseRegistrar.swift in Sources */,
 				3AA815EF2276E44100F5DB52 /* Promise+HttpProvider.swift in Sources */,
 				3AA8163A2276E4AE00F5DB52 /* SECP256k1.swift in Sources */,
 				3AA8160D2276E44100F5DB52 /* Web3+ERC721.swift in Sources */,
+				E9BFC9D52A2CE0F300CBA01E /* EIP712+ABIType.swift in Sources */,
 				3AA815DC2276E44100F5DB52 /* Web3+Structures.swift in Sources */,
 				3AA815AE2276E44100F5DB52 /* ENSResolver.swift in Sources */,
 				3AA815BF2276E44100F5DB52 /* EthereumTransaction.swift in Sources */,
@@ -1397,6 +1435,7 @@
 				E9A21DD82683FC860062462C /* crypto_scrypt-check.c in Sources */,
 				E9A21DD12683FC860062462C /* crypto_scrypt-hexconvert.c in Sources */,
 				3AA815C12276E44100F5DB52 /* Web3+BrowserFunctions.swift in Sources */,
+				E9BFC9D32A2CE0F300CBA01E /* EIP712+ABIDecoder.swift in Sources */,
 				3AA815E82276E44100F5DB52 /* Extensions.swift in Sources */,
 				E9A21DD22683FC860062462C /* crypto-mcf.c in Sources */,
 				3AA815FE2276E44100F5DB52 /* Web3+ERC820.swift in Sources */,
@@ -1417,16 +1456,20 @@
 				3AA816082276E44100F5DB52 /* Web3+ERC1644.swift in Sources */,
 				3AA815AB2276E44100F5DB52 /* ETHRegistrarController.swift in Sources */,
 				3A7EA3602280EB27005120C2 /* Decodable+Extensions.swift in Sources */,
+				E9BFC9D92A2CE0F300CBA01E /* EIP712+JSON.swift in Sources */,
+				E9BFC9D72A2CE0F300CBA01E /* EIP712+BigInt.swift in Sources */,
 				3AA816022276E44100F5DB52 /* Web3+ERC1633.swift in Sources */,
 				3AA815CB2276E44100F5DB52 /* Web3.swift in Sources */,
 				3AA815B62276E44100F5DB52 /* BIP39+WordLists.swift in Sources */,
 				3AA816032276E44100F5DB52 /* Web3+ERC20.swift in Sources */,
 				E2EDC5EA241EDE3600410EA6 /* BrowserViewController.swift in Sources */,
+				E9BFC9DA2A2CE0F300CBA01E /* EIP712+Function.swift in Sources */,
 				E9A21DDC2683FC860062462C /* crypto_scrypt-nosse.c in Sources */,
 				3AA8160C2276E44100F5DB52 /* Web3+ERC1410.swift in Sources */,
 				3AA816042276E44100F5DB52 /* Web3+ERC1400.swift in Sources */,
 				3AA815ED2276E44100F5DB52 /* Promise+Web3+Eth+GetBlockByHash.swift in Sources */,
 				3AA815DF2276E44100F5DB52 /* BigUInt+Extensions.swift in Sources */,
+				E9BFC9D42A2CE0F300CBA01E /* EIP712+ABIValue.swift in Sources */,
 				3AA815CC2276E44100F5DB52 /* Web3+InfuraProviders.swift in Sources */,
 				3AA816092276E44100F5DB52 /* Web3+ERC777.swift in Sources */,
 				3AA815F02276E44100F5DB52 /* Promise+Web3+Eth+SendTransaction.swift in Sources */,
@@ -1452,6 +1495,7 @@
 				3AA815C92276E44100F5DB52 /* RLP.swift in Sources */,
 				E9A21DCC2683FC860062462C /* Makefile in Sources */,
 				3AA816012276E44100F5DB52 /* Web3+ERC1376.swift in Sources */,
+				E9BFC9D82A2CE0F300CBA01E /* EIP712+ABIError.swift in Sources */,
 				3AA815A72276E44100F5DB52 /* ENS.swift in Sources */,
 				3AA815F32276E44100F5DB52 /* Promise+Web3+Eth+GetTransactionReceipt.swift in Sources */,
 				3AA815B32276E44100F5DB52 /* IBAN.swift in Sources */,
