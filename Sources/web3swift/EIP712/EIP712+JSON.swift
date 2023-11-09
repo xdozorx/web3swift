@@ -93,7 +93,12 @@ public extension EIP712_JSON {
         if case .number(let value) = self {
             return value
         } else if case .string(let string) = self {
-            return UInt64(string)
+            if let value = UInt64(string) {
+                return value
+            }
+            if string.range(of: "0x") != nil {
+                return UInt64(string.dropFirst(2), radix: 16)
+            }
         }
         return nil
     }
