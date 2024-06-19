@@ -131,19 +131,14 @@ public class BIP32Keystore: AbstractKeystore {
         try encryptDataToStorage(password, data: serializedRootNode, aesMode: aesMode)
     }
 
-    public convenience init?(mnemonic: String, derivedIndex: Int, password: String = "", mnemonicsPassword: String = "") throws {
+    public init?(mnemonics: String, derivedIndex: Int, password: String = "", mnemonicsPassword: String = "") throws {
                 
-        guard var seed = BIP39.seedFromMmemonics(mnemonic, password: mnemonicsPassword, language: .english) else {
+        guard var seed = BIP39.seedFromMmemonics(mnemonics, password: mnemonicsPassword, language: .english) else {
             throw AbstractKeystoreError.noEntropyError
         }
         defer{
             Data.zero(&seed)
         }
-        
-        try self.init(seed: seed, derivedIndex: derivedIndex, password: password)
-    }
-    
-    public init?(seed: Data, derivedIndex: Int, password: String = "") throws {
         
         let prefixPath = HDNode.defaultPathMetamaskPrefix.appending("/\(derivedIndex)")
 
