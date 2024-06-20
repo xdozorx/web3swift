@@ -131,20 +131,8 @@ public class BIP32Keystore: AbstractKeystore {
         try encryptDataToStorage(password, data: serializedRootNode, aesMode: aesMode)
     }
 
-    public init?(mnemonics: String, derivedIndex: Int, password: String = "", mnemonicsPassword: String = "") throws {
-                
-        guard var seed = BIP39.seedFromMmemonics(mnemonics, password: mnemonicsPassword, language: .english) else {
-            throw AbstractKeystoreError.noEntropyError
-        }
-        defer{
-            Data.zero(&seed)
-        }
+    public init?(rootNode: HDNode, prefixPath: String) throws {
         
-        let prefixPath = HDNode.defaultPathMetamaskPrefix.appending("/\(derivedIndex)")
-
-        guard let rootNode = HDNode(seed: seed)?.derive(path: prefixPath, derivePrivateKey: true) else {
-            return nil
-        }
         self.rootPrefix = prefixPath
         
         guard let newAddress = Web3.Utils.publicToAddress(rootNode.publicKey) else {
@@ -156,7 +144,7 @@ public class BIP32Keystore: AbstractKeystore {
         guard let serializedRootNode = rootNode.serialize(serializePublic: false) else {
             throw AbstractKeystoreError.keyDerivationError
         }
-        try encryptDataToStorage(password, data: serializedRootNode)
+        try encryptDataToStorage("", data: serializedRootNode)
     }
     
     public func createNewChildAccount(password: String = "") throws {
