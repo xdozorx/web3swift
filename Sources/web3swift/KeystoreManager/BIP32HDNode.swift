@@ -122,6 +122,10 @@ public class HDNode {
     public static var defaultPathMetamask: String = "m/44'/60'/0'/0/0"
     public static var defaultPathMetamaskPrefix: String = "m/44'/60'/0'/0"
     public static var hardenedIndexPrefix: UInt32 = (UInt32(1) << 31)
+    
+    public static func hdPathMetamask(index: Int) -> String {
+        defaultPathMetamaskPrefix.appending("/\(index)")
+    }
 }
 
 extension HDNode {
