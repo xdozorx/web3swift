@@ -7,7 +7,7 @@ Pod::Spec.new do |spec|
     spec.summary      = 'Web3 implementation in vanilla Swift for iOS, macOS, and Linux'
     spec.homepage     = 'https://github.com/xdozorx/web3swift2'
     spec.author       = {"Alex Vlasov" => "alex.m.vlasov@gmail.com", "Anton Grigorev" => "antongrigorjev2010@gmail.com", "Petr Korolev" => "sky4winder@gmail.com"}
-    spec.source       = { :git => 'https://github.com/xdozorx/web3swift2', :tag => spec.version.to_s }
+    spec.source       = { :git => 'https://github.com/xdozorx/web3swift2', :branch => 'NewPerformanceOptimization' }
     spec.source_files = "Sources/web3swift/{Contract,Convenience,EthereumABI,EthereumAddress,HookedFunctions,KeystoreManager,Promises,SwiftRLP,Transaction,Web3,EIP712}/*.swift", "Sources/web3swift/{Tokens,Utils}/**/*.swift"
     spec.ios.source_files   = 'Sources/web3swift/Browser/*.swift'
     spec.resource_bundle = { "Browser" => "Sources/web3swift/Browser/*.js" }
