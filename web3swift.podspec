@@ -1,11 +1,11 @@
 Pod::Spec.new do |spec|
     spec.name         = 'web3swift'
-    spec.version      = '2.3.0'
+    spec.version      = '2.3.1'
     spec.ios.deployment_target = "9.0"
     spec.osx.deployment_target = "10.11"
     spec.license      = { :type => 'Apache License 2.0', :file => 'LICENSE.md' }
     spec.summary      = 'Web3 implementation in vanilla Swift for iOS, macOS, and Linux'
-    spec.homepage     = { 'https://github.com/xdozorx/web3swift2', :branch => 'NewPerformanceOptimization' }
+    spec.homepage     = 'https://github.com/xdozorx/web3swift2'
     spec.author       = {"Alex Vlasov" => "alex.m.vlasov@gmail.com", "Anton Grigorev" => "antongrigorjev2010@gmail.com", "Petr Korolev" => "sky4winder@gmail.com"}
     spec.source       = { :git => 'https://github.com/xdozorx/web3swift2', :branch => 'NewPerformanceOptimization', :tag => spec.version.to_s }
     spec.source_files = "Sources/web3swift/{Contract,Convenience,EthereumABI,EthereumAddress,HookedFunctions,KeystoreManager,Promises,SwiftRLP,Transaction,Web3,EIP712}/*.swift", "Sources/web3swift/{Tokens,Utils}/**/*.swift"
